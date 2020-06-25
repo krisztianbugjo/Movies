@@ -6,22 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/movie_cover"
-        android:layout_width="174dp"
-        android:layout_height="192dp"
-        android:layout_marginStart="24dp"
+    <ListView
+        android:id="@+id/listOfMovies"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="#F00"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="354dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

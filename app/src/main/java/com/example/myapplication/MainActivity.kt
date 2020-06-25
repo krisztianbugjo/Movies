@@ -2,6 +2,8 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.BaseAdapter
+import android.widget.ListView
 import com.example.myapplication.ui.main.DetailsFragment
 import com.example.myapplication.ui.main.MoviesFragment
 import com.example.myapplication.ui.main.SearchFragment
@@ -18,5 +20,7 @@ class MainActivity : AppCompatActivity() {
                     .commitNow()
 
         }
-    }
+
+
+}
 }
