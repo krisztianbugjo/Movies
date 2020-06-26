@@ -18,10 +18,10 @@ class MoviesFragment : Fragment() {
     lateinit var movieController : MovieController
 
 
-
     fun fillMovieList() {
         movieController.searchMovies(searchField.text.toString(), object: ApiResponseListener<Movie> {
             override fun onResponse(list: List<Movie>) {
+
             }
         })
     }

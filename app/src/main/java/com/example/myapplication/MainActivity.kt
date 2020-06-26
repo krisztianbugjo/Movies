@@ -16,11 +16,10 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null) {
 
             supportFragmentManager.beginTransaction()
-                    .replace(R.id.movies_container, SearchFragment.newInstance())
-                    .commitNow()
+                .replace(R.id.main_container, SearchFragment.newInstance())
+                .commit()
+            //.commitNow()
 
         }
-
-
-}
+    }
 }

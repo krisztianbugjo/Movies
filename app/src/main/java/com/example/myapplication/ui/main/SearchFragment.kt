@@ -23,13 +23,11 @@ class SearchFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         view?.findViewById<Button>(R.id.search_button)?.setOnClickListener {
-            fragmentManager?.beginTransaction()
-                ?.replace(R.id.details_container, DetailsFragment.newInstance())
-                ?.commitNow()
 
-            fragmentManager?.beginTransaction()
-                ?.replace(R.id.movies_container, MoviesFragment.newInstance())
-                ?.commitNow()
+            requireActivity()?.supportFragmentManager.beginTransaction()
+                ?.replace(R.id.main_container, MoviesFragment.newInstance())
+                ?.commit()
+
 
 
         }
